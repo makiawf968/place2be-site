@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Place2Be – Support</title>
+<style>
+  :root {
+    --bg: #0b0b12;
+    --card: #15151f;
+    --text: #f5f5f7;
+    --muted: #b6b6c2;
+    --accent: #ff3d7f;
+    --border: rgba(255,255,255,.08);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(160deg, #0b0b12 0%, #1a0f1f 100%);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+  }
+  header {
+    text-align: center;
+    padding: 56px 20px 24px;
+  }
+  header .logo {
+    width: 72px; height: 72px;
+    border-radius: 22px;
+    margin: 0 auto 18px;
+    background: linear-gradient(135deg, #ff3d7f, #6f3dff);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 32px; font-weight: 700;
+    box-shadow: 0 12px 40px rgba(255, 61, 127, .35);
+  }
+  header h1 { margin: 0 0 6px; font-size: 28px; letter-spacing: -0.02em; }
+  header p { color: var(--muted); margin: 0; }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 24px 20px 80px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 24px;
+    margin-bottom: 18px;
+  }
+  .card h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+  .card p, .card li { color: var(--muted); margin: 6px 0; font-size: 15px; }
+  .card a { color: var(--accent); text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  ul { padding-left: 20px; }
+  .contact {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 8px 16px;
+    margin-top: 8px;
+  }
+  .contact dt { color: var(--text); font-weight: 600; }
+  .contact dd { margin: 0; color: var(--muted); }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    padding: 28px 20px 40px;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">P2B</div>
+    <h1>Place2Be – Support</h1>
+    <p>L'app pour découvrir où sortir ce soir.</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Nous contacter</h2>
+      <p>Une question, un bug, une suggestion ? Écris-nous, on répond sous 48 h.</p>
+      <dl class="contact">
+        <dt>Email</dt><dd><a href="mailto:support@place2be.app">support@place2be.app</a></dd>
+        <dt>Développeur</dt><dd>MAK</dd>
+        <dt>Version</dt><dd>iOS 2.0</dd>
+      </dl>
+    </section>
+
+    <section class="card">
+      <h2>Questions fréquentes</h2>
+      <p><strong>L'app ne détecte pas ma ville.</strong><br/>
+      Place2Be utilise la localisation pour suggérer des lieux autour de toi. Va dans Réglages iOS → Place2Be → Position et choisis « Lorsque l'app est active ».</p>
+      <p><strong>Je n'arrive pas à m'abonner Premium.</strong><br/>
+      Les achats passent par l'App Store. Si la transaction échoue, redémarre l'app, vérifie la connexion réseau, puis utilise « Restaurer mes achats » dans l'écran Premium.</p>
+      <p><strong>Comment supprimer mon compte ?</strong><br/>
+      Dans l'app : onglet Profil → Réglages → Supprimer mon compte. Tu peux aussi nous envoyer un email à <a href="mailto:support@place2be.app">support@place2be.app</a> et on procède sous 7 jours.</p>
+    </section>
+
+    <section class="card">
+      <h2>Liens utiles</h2>
+      <ul>
+        <li><a href="privacy.html">Politique de confidentialité</a></li>
+        <li><a href="https://apps.apple.com/app/id6761231686">Place2Be sur l'App Store</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Place2Be · <a href="mailto:support@place2be.app">support@place2be.app</a>
+  </footer>
+</body>
+</html>
